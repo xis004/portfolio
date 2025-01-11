@@ -3,13 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Leo Shi: Personal Site and Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Contacts</title>
 </head>
 <body>
-    <h1>Leo Shi</h1>
-    <p>I am a Senior at UC San Diego studying Mathematics Computer Science and Data Science!</p>
-    <img src="images/IMG_4992.JPG" width=384 height=256 alt="leo shi playing flute">
+    <h1> Contacts </h1>
     <nav>
         <a href="/index.html"> Home </a> <br>
         <a href="/contact/index.html"> Contacts </a> <br>
@@ -17,5 +14,12 @@
         <a href="/contact/resume.html" target="_blank"> Resume </a>
         <a href="https://github.com/xis004" target="_blank"> Profile </a>
     </nav>
+
+    <form action="mailto:example@gmail.com" method="POST">
+        <label>Email: <input name="email" type="email"> </label>
+        <label>Subject: <input name="subject" type="text"> </label>
+        <label>Body: <textarea name="body"></textarea> </label>
+        <button>Submit</button>
+    </form>
 </body>
 </html>
