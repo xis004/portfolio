@@ -3,17 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
     <title>Contacts</title>
 </head>
 <body>
-    <h1> Contacts </h1>
     <nav>
-        <a href="../index.html"> Home </a> <br>
-        <a href="./index.html"> Contacts </a> <br>
-        <a href="../projects/index.html"> Projects </a> <br>
-        <a href="./resume.html" target="_blank"> Resume </a> <br>
-        <a href="https://github.com/xis004" target="_blank"> Profile </a> <br>
+        <ul>
+            <li> <a href="../index.html"> Home </a> </li>
+            <li> <a href="./index.html" class="current"> Contacts </a> </li>
+            <li> <a href="../projects/index.html"> Projects </a> </li>
+            <li> <a href="./resume.html" target="_blank"> Resume </a> </li>
+            <li> <a href="https://github.com/xis004" target="_blank"> Profile </a> </li>
+        </ul>
     </nav>
+    <h1> Contacts </h1>
 
     <form action="mailto:example@gmail.com" method="POST" enctype="text/plain">
         <label>Email: <input name="email" type="email"> </label>

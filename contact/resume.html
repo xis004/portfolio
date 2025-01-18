@@ -3,80 +3,106 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="resume.css">
     <title>Resume</title>
 </head>
 <body>
     <h1> Xiangyu(Leo) Shi</h1>
-    <section>
-        <a href="mailto:xis004@ucsd.edu">xis004@ucsd.edu</a>
-        <a href="https://www.linkedin.com/in/xleoshi/"> LinkedIn </a>
-        <a href="https://github.com/xis004"> GitHub </a>
+    <section id="contacts">
+        <ul>
+            <li><a href="mailto:xis004@ucsd.edu">xis004@ucsd.edu</a></li>
+            <li><a href="tel:+18585680271">858-568-0271</a></li>
+            <li><a href="https://xis004.github.io/portfolio/" target=”_blank”> Website </a></li>
+            <li><a href="https://www.linkedin.com/in/xleoshi/" target=”_blank”> LinkedIn </a></li>
+            <li><a href="https://github.com/xiangyshi" target=”_blank”> GitHub </a></li>
+            
+        </ul>
+        
     </section>
     <section>
         <h2> Education </h2>
-        <h3> UC San Diego </h3> <time datetime="2021-09"> 2021-09 </time>
-        <h3> Bachelor of Science, Mathematics-Computer Science</h3>
+        <h3 class="location">
+            <span>UC San Diego</span>
+        </h3>
+        <h3 class="info"> 
+            <span> Mathematics-Computer Science, BS </span>
+            <time datetime="2021-09">2021.09 - 2025.03</time>
+        </h3>
         <table>
-            <ul>Overall GPA: 3.9, Provost Honors (all quarters)</ul>
-            <ul>Proficiency in Python, Java, Nodejs, SQL, C/C++</ul>
-            <ul>Experience with NumPy, Pandas, Scikit-Learn, Django, Flask, MongoDB, Docker</ul>
+            <li>Overall GPA: 3.9, Provost Honors (all quarters)</li>
+            <li>Proficiency in Python, Java, Nodejs, SQL, C/C++</li>
+            <li>Experience with NumPy, Pandas, Scikit-Learn, Django, Flask, MongoDB, Docker</li>
         </table>
     </section>
     <section>
         <h2> Research Experience </h2>
-        <h3> Ehlers Lab, The Scripps Research Institute </h3>
-        <h3> Research Assistant </h3>
+        <h3 class="location"> 
+            <span>Ehlers Lab, The Scripps Research Institute</span>
+        </h3>
+        <h3 class="info"> 
+            <span> Research Assistant </span>
+            <time> 2024.09 - Present </time>
+        </h3>
         <table>
-            <ul>
+            <li>
                 Optimized bi-clustering algorithms for single nucleotide polymorphism (SNP) mutation analysis,
                 reducing average runtime from 16 hours to 10 minutes.
-            </ul>
-            <ul>
+            </li>
+            <li>
                 Conducted performance profiling and algorithm tuning, streamlining genetic data analysis and boosting
                 computational efficiency.
-            </ul>
+            </li>
         </table>
-        <h3> Saier Lab, UC San Diego </h3>
-        <h3> Research Assistant </h3>
+        <h3 class="location"> Saier Lab, UC San Diego </h3>
+        <h3 class="info"> 
+            <span> Research Assistant </span>
+            <time> 2024.07 - Present </time>
+        </h3>
         <table>
-            <ul>
+            <li>
                 Independently developed a protein family architecture processing tool using Python and CDD/Pfam for
                 Transporter Classification Database (TCDB), a database containing over 23000 protein strands
-            </ul>
-            <ul>
+            </li>
+            <li>
                 Implemented algorithms to identify conserved domain gaps in protein sequences, using union-find
                 methods to discover potential novel domains.
-            </ul>
+            </li>
         </table>
     </section>
     <section>
         <h2> Professional Experience </h2>
-        <h3> Foundation for a Human Internet </h3>
-        <h3> Full Stack Engineer </h3>
+        <h3 class="location"> Foundation for a Human Internet </h3>
+        <h3 class="info"> 
+            <span> Full Stack Engineer </span>
+            <time> 2024.09 - Present </time>
+        </h3>
         <table>
-            <ul>
+            <li>
                 Contributed to the development and optimization of humanID developer console utilizing Django and MySQL, improving usability and functionality.
-            </ul>
-            <ul>
+            </li>
+            <li>
                 Debugged and resolved UI issues by analyzing network requests and identifying an outdated API call in the backend.
-            </ul>
-            <ul>
+            </li>
+            <li>
                 Optimized cron task automation, leveraged innovative methods to resolve production and developing system incompatibility
-            </ul>
+            </li>
         </table>
         
-        <h3> STEMz Learning </h3>
-        <h3> Full Stack Engineer </h3>
+        <h3 class="location"> STEMz Learning </h3>
+        <h3 class="info"> 
+            <span> Full Stack Engineer </span>
+            <time> 2024.06 - Present </time>
+        </h3>
         <table>
-            <ul>
+            <li>
                 Developed a dynamic quiz feature using JavaScript to enhance user engagement and learning outcomes.
-            </ul>
-            <ul>
+            </li>
+            <li>
                 Deployed an Express API on Vercel, facilitating cross-platform communication.
-            </ul>
-            <ul>
+            </li>
+            <li>
                 Managed end-to-end integration of user and classroom system with a MongoDB database.
-            </ul>
+            </li>
         </table>
     </section>
 </body>

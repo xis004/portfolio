@@ -1,6 +1,91 @@
+:root {
+    --color-accent: oklch(50% 60% 250);
+    --color-accent-light: oklch(from var(--color-accent) 95% 5% h);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    line-height: 1.1;
+}
+
 body {
-    /* Set line height to 1.5 times the font size
-         and use the OS’s UI font as the website font
-       */
+    max-width: 100ch;
+    margin-inline: auto;
     font: 100%/1.5 system-ui;
+    padding: 5ch;
+}
+
+nav {
+    display: flex;
+    margin-bottom: 10px;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: oklch(80% 3% 200);
+    
+    a {
+        flex: 1;
+        text-decoration: none;
+        color: inherit;
+        text-align: center;
+        padding: 0.5em;
+    }
+
+    a:hover {
+        border-bottom: 0.4em solid var(--color-accent);
+        background-color: var(--color-accent-light);
+        padding: -0.1em;
+    }
+
+    a.current {
+        border-bottom: 0.4em solid oklch(80% 3% 200);
+        padding: -0.1em;
+    }
+    ul {
+        display: contents;
+        li {
+            display: contents;
+        }
+    }
+}
+
+form {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 1em;
+}
+
+input, textarea, button {
+    font: inherit;
+}
+
+button {
+    display: grid;
+    grid-column: 1 / -1;
+    text-align: center;
+}
+
+label {
+    display: grid;
+    grid-template-columns: subgrid;
+    grid-column: 1 / -1;
+}
+
+.projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(15em, 1fr));
+    gap: 1em;
+
+    h2 {
+        margin: 0;
+    }
+
+}
+
+article {
+    display: grid;
+    grid-template-rows: subgrid;
+    grid-row: span 3;
+}
+
+h1 {
+    font-size:400%;
 }
