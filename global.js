@@ -1,20 +1,14 @@
 function $$(selector, context = document) {
   return Array.from(context.querySelectorAll(selector));
 }
-const baseURL = "/portfolio/";
-const devURL = "";
+const baseURL = "portfolio/";
+const devURL = "http://localhost:5500/";
 let pages = [
-    { url: '', title: 'Home' },
-    { url: 'projects/', title: 'Projects' },
-    { url: 'contact/', title: 'Contact' },
-    { url: 'contact/resume.html', title: "Resume"},
+    { url: baseURL + 'index.html', title: 'Home' },
+    { url: baseURL + 'projects/index.html', title: 'Projects' },
+    { url: baseURL + 'contact/index.html', title: 'Contact' },
+    { url: baseURL + 'contact/resume.html', title: "Resume"},
     { url: 'https://github.com/xiangyshi', title: "GitHub"},
-
-    // { url: devURL + 'index.html', title: 'Home' },
-    // { url: devURL + 'projects/index.html', title: 'Projects' },
-    // { url: devURL + 'contact/index.html', title: 'Contact' },
-    // { url: devURL + 'contact/resume.html', title: "Resume"},
-    // { url: 'https://github.com/xiangyshi', title: "GitHub"}
 ];
 
 let nav = document.createElement('nav');
@@ -22,8 +16,8 @@ const ARE_WE_HOME = document.documentElement.classList.contains('home');
 document.body.prepend(nav);
 for (let p of pages) {
     let url = p.url;
-    if (!url.startsWith('http')) {
-        url = ARE_WE_HOME ? baseURL + url : baseURL + '../' + url;
+    if (!ARE_WE_HOME && !url.startsWith('http')) {
+        url = '../' + url;
     }
     let title = p.title;
     let a = document.createElement('a');
