@@ -4,7 +4,7 @@ function $$(selector, context = document) {
 const baseURL = "portfolio/";
 const devURL = "";
 let pages = [
-    { url: baseURL + 'index.html', title: 'Home' },
+    { url: 'index.html', title: 'Home' },
     { url: 'projects/index.html', title: 'Projects' },
     { url: 'contact/index.html', title: 'Contact' },
     { url: 'contact/resume.html', title: "Resume"},
