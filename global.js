@@ -3,8 +3,8 @@ console.log('IT’S ALIVE!');
 function $$(selector, context = document) {
   return Array.from(context.querySelectorAll(selector));
 }
-const baseURL = "https://xis004.github.io/portfolio/";
-const devURL = "http://localhost:5500/";
+const baseURL = "portfolio/";
+const devURL = "";
 let pages = [
     { url: baseURL + 'index.html', title: 'Home' },
     { url: baseURL + 'projects/index.html', title: 'Projects' },
