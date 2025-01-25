@@ -2,13 +2,19 @@ function $$(selector, context = document) {
   return Array.from(context.querySelectorAll(selector));
 }
 const baseURL = "portfolio/";
-const devURL = "http://localhost:5500/";
+const devURL = "";
 let pages = [
     { url: baseURL + 'index.html', title: 'Home' },
     { url: baseURL + 'projects/index.html', title: 'Projects' },
     { url: baseURL + 'contact/index.html', title: 'Contact' },
     { url: baseURL + 'contact/resume.html', title: "Resume"},
     { url: 'https://github.com/xiangyshi', title: "GitHub"},
+
+    // { url: devURL + 'index.html', title: 'Home' },
+    // { url: devURL + 'projects/index.html', title: 'Projects' },
+    // { url: devURL + 'contact/index.html', title: 'Contact' },
+    // { url: devURL + 'contact/resume.html', title: "Resume"},
+    // { url: 'https://github.com/xiangyshi', title: "GitHub"},
 ];
 console.log(pages);
 let nav = document.createElement('nav');
