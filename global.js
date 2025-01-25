@@ -3,7 +3,7 @@ console.log('IT’S ALIVE!');
 function $$(selector, context = document) {
   return Array.from(context.querySelectorAll(selector));
 }
-const baseURL = "https://xiangyshi.github.io/portfolio/";
+const baseURL = "https://xis004.github.io/portfolio/";
 const devURL = "http://localhost:5500/";
 let pages = [
     { url: baseURL + 'index.html', title: 'Home' },
