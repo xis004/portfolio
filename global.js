@@ -3,13 +3,20 @@ console.log('IT’S ALIVE!');
 function $$(selector, context = document) {
   return Array.from(context.querySelectorAll(selector));
 }
-
+const baseURL = "https://xiangyshi.github.io/portfolio/";
+const devURL = "http://localhost:5500/";
 let pages = [
-    { url: 'index.html', title: 'Home' },
-    { url: 'projects/index.html', title: 'Projects' },
-    { url: 'contact/index.html', title: 'Contact' },
-    { url: 'contact/resume.html', title: "Resume"},
-    { url: 'https://github.com/xiangyshi', title: "GitHub"}
+    { url: baseURL + 'index.html', title: 'Home' },
+    { url: baseURL + 'projects/index.html', title: 'Projects' },
+    { url: baseURL + 'contact/index.html', title: 'Contact' },
+    { url: baseURL + 'contact/resume.html', title: "Resume"},
+    { url: 'https://github.com/xiangyshi', title: "GitHub"},
+
+    // { url: devURL + 'index.html', title: 'Home' },
+    // { url: devURL + 'projects/index.html', title: 'Projects' },
+    // { url: devURL + 'contact/index.html', title: 'Contact' },
+    // { url: devURL + 'contact/resume.html', title: "Resume"},
+    // { url: 'https://github.com/xiangyshi', title: "GitHub"}
 ];
 
 let nav = document.createElement('nav');
