@@ -10,7 +10,7 @@ let pages = [
     { url: baseURL + 'contact/resume.html', title: "Resume"},
     { url: 'https://github.com/xiangyshi', title: "GitHub"},
 ];
-
+console.log(pages);
 let nav = document.createElement('nav');
 const ARE_WE_HOME = document.documentElement.classList.contains('home');
 document.body.prepend(nav);
@@ -19,6 +19,7 @@ for (let p of pages) {
     if (!ARE_WE_HOME && !url.startsWith('http')) {
         url = '../' + url;
     }
+    console.log(url);
     let title = p.title;
     let a = document.createElement('a');
     a.href = url;
