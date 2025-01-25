@@ -1,15 +1,13 @@
-console.log('IT’S ALIVE!');
-
 function $$(selector, context = document) {
   return Array.from(context.querySelectorAll(selector));
 }
-const baseURL = "portfolio/";
+const baseURL = "/portfolio/";
 const devURL = "";
 let pages = [
-    { url: baseURL + 'index.html', title: 'Home' },
-    { url: baseURL + 'projects/index.html', title: 'Projects' },
-    { url: baseURL + 'contact/index.html', title: 'Contact' },
-    { url: baseURL + 'contact/resume.html', title: "Resume"},
+    { url: '', title: 'Home' },
+    { url: 'projects/', title: 'Projects' },
+    { url: 'contact/', title: 'Contact' },
+    { url: 'contact/resume.html', title: "Resume"},
     { url: 'https://github.com/xiangyshi', title: "GitHub"},
 
     // { url: devURL + 'index.html', title: 'Home' },
@@ -24,8 +22,8 @@ const ARE_WE_HOME = document.documentElement.classList.contains('home');
 document.body.prepend(nav);
 for (let p of pages) {
     let url = p.url;
-    if (!ARE_WE_HOME && !url.startsWith('http')) {
-        url = '../' + url;
+    if (!url.startsWith('http')) {
+        url = ARE_WE_HOME ? baseURL + url : baseURL + '../' + url;
     }
     let title = p.title;
     let a = document.createElement('a');
