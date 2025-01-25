@@ -5,9 +5,9 @@ const baseURL = "portfolio/";
 const devURL = "";
 let pages = [
     { url: baseURL + 'index.html', title: 'Home' },
-    { url: baseURL + 'projects/index.html', title: 'Projects' },
-    { url: baseURL + 'contact/index.html', title: 'Contact' },
-    { url: baseURL + 'contact/resume.html', title: "Resume"},
+    { url: 'projects/index.html', title: 'Projects' },
+    { url: 'contact/index.html', title: 'Contact' },
+    { url: 'contact/resume.html', title: "Resume"},
     { url: 'https://github.com/xiangyshi', title: "GitHub"},
 
     // { url: devURL + 'index.html', title: 'Home' },
