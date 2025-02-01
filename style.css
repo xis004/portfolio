@@ -85,6 +85,13 @@ label {
         margin: 0;
     }
 
+    img {
+        width: 280px;
+        height: 150px;
+        object-fit: scale-down;
+    }
+
+
 }
 
 article {
@@ -102,3 +109,22 @@ h1 {
     top: 1rem;
     right: 1rem;
 }
+
+#profile-stats dl {
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);  /* Creates 4 equal columns */
+    gap: 1em;
+    align-items: baseline;
+
+
+    dt {
+        font-weight: bold;
+        grid-row: 1;  /* All terms in first row */
+    }
+
+    dd {
+        margin: 0;
+        grid-row: 2;  /* All definitions in second row */
+    }
+}
+

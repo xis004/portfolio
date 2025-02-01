@@ -1,0 +1,63 @@
+[
+    {
+        "title": "TCDB AI Classifier",
+        "image": "https://www.tcdb.org/images/logo_maroon.png",
+        "description": "A data pipeline for the TCDB database of transporter proteins, provides protein architectural data to a convolutional neural network for classification."
+    },
+    {
+        "title": "Autograder Notifier",
+
+        "image": "https://autograder.ucsd.edu/public/images/autograder_logo.png",
+        "description": "An automated program that notifies tutors in real time when a student has submitted a help ticket."
+    },
+    {
+        "title": "Alias adipisci non facilis.",
+        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+        "description": "Quas ex enim et eius asperiores reiciendis. Magnam blanditiis eveniet officiis, quidem aliquid officia alias velit delectus aut laborum quibusdam repellendus similique ad voluptate dicta exercitationem ea ipsam, commodi sapiente."
+    },
+    {
+        "title": "Sed quasi iste repellendus.",
+        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+        "description": "Tempore similique tenetur, facere cumque rerum pariatur officia quos error vero eligendi totam sapiente vel facilis. Minima dolor deserunt, dolorum autem harum incidunt eveniet, dolores iusto ex, similique a corporis?"
+    },
+    {
+        "title": "Ipsam tenetur quidem rem?",
+        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+        "description": "Quasi suscipit inventore praesentium necessitatibus nostrum enim nesciunt impedit, non veniam sequi nobis dignissimos, perspiciatis, rem eum. Delectus natus ea dicta quibusdam, laudantium omnis quaerat eum ipsa porro facilis libero."
+    },
+    {
+        "title": "Saepe ad dolores optio?",
+        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+        "description": "Quia nesciunt, iste nemo laboriosam rerum amet rem quos incidunt, maxime voluptates, qui assumenda. Cupiditate distinctio commodi earum officiis culpa optio non. Maxime sed aliquam voluptate optio ullam commodi consequatur?"
+    },
+    {
+        "title": "Pariatur consequatur mollitia ipsa.",
+        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+        "description": "Exercitationem, id? Harum assumenda vel sapiente amet atque cupiditate ad, quaerat vero? Nobis molestias dicta earum fugiat, ullam et soluta cupiditate tempora commodi maxime, beatae ducimus eveniet autem possimus aperiam."
+    },
+    {
+        "title": "Velit officiis eius consectetur?",
+        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+        "description": "Iste, delectus maiores? Dignissimos delectus error labore ut vero quod dolorum quibusdam illum vitae aspernatur incidunt consequatur nulla, adipisci rerum voluptate repellendus nam eum sed doloremque impedit quae quos quia?"
+    },
+    {
+        "title": "Accusantium nesciunt esse dolorum!",
+        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+        "description": "Praesentium assumenda eligendi asperiores, pariatur repellendus veritatis necessitatibus consequatur delectus, fugit accusantium earum, qui dicta. Fugit ratione eveniet, iusto est iure sapiente deserunt corrupti, ea, laudantium soluta dolore quibusdam harum!"
+    },
+    {
+        "title": "Inventore ipsam nisi et!",
+        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+        "description": "Aperiam explicabo necessitatibus nemo magnam ad facilis neque ab eligendi, officiis laboriosam pariatur cupiditate nobis deleniti eaque cumque itaque sed accusantium. Ducimus fugiat necessitatibus expedita distinctio, dolores dignissimos quia unde?"
+    },
+    {
+        "title": "Quas, perferendis? Nostrum, aspernatur?",
+        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+        "description": "Hic ab eligendi minus sed, ipsa itaque facilis, sunt molestias vero cum omnis unde voluptatum doloribus sapiente nostrum animi quaerat eos maxime, reprehenderit totam delectus. Unde vero voluptatum qui veritatis?"
+    },
+    {
+        "title": "Officia eum dolorem quis.",
+        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+        "description": "Reiciendis, nostrum veritatis corporis quia minus aliquam delectus rerum animi non molestias aut exercitationem voluptatum inventore quasi similique voluptatem possimus impedit unde tenetur velit incidunt maxime? Iste illum eos molestias."
+    }
+]
