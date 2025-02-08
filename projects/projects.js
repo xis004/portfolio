@@ -63,7 +63,7 @@ function renderPieChart(projectsGiven) {
           .append('path')
           .attr('d', arc)
           .attr('fill', colors(idx))
-          .on('click', (event) => {
+          .on('click', () => {
             selectedIndex = selectedIndex === idx ? -1 : idx;
             newSVG.selectAll('path')
                 .attr('class', (_, idx) => (
@@ -74,7 +74,7 @@ function renderPieChart(projectsGiven) {
                     selectedIndex == idx ? "selected" : ""
                 ));
             if (selectedIndex === -1) {
-                renderProjects(filteredProjects, projectsContainer, "h2");
+                renderProjects(projects, projectsContainer, "h2");
             } else {
                 let filteredProjects = projects.filter((project) => (project.year === data[selectedIndex].label));
                 renderProjects(filteredProjects, projectsContainer, 'h2');
