@@ -1,0 +1,92 @@
+#projects-pie-plot {
+    flex: 0;
+    max-width: 20em;
+    margin-block: 2em;
+    overflow: visible;
+}
+
+.container {
+    display: flex; /* Enables side-by-side layout */
+    align-items: center; /* Aligns items vertically */
+    gap: 1.5em; /* Adjusts spacing between the pie chart and legend */
+}
+
+.legend {
+    display: flex;
+    flex-wrap: wrap; /* Allows items to wrap when there’s not enough space */
+    gap: 10px; /* Space between items */
+    border: 1px solid;
+    padding: 10px;
+    border-radius: 5px;
+    list-style: none; /* Removes bullet points */
+    width: 100%; /* Ensures the legend fills the available width */
+    max-width: 400px; /* Prevents excessive stretching */
+}
+
+.legend li {
+    display: flex;
+    align-items: center; /* Aligns swatch and text */
+    gap: 8px; /* Space between swatch and text */
+    font-family: Arial, sans-serif;
+    white-space: nowrap; /* Prevents text from breaking awkwardly */
+    flex: 1 1 120px; /* Makes each item take a minimum of 120px width and grow if space allows */
+}
+
+.swatch {
+    width: 16px;
+    height: 16px;
+    background-color: var(--color); /* Uses inline color */
+    border-radius: 4px; /* Slight rounding */
+    display: inline-block; /* Ensures it stays inline */
+}
+
+
+
+
+.projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(15em, 1fr));
+    gap: 1em;
+
+    h2 {
+        margin: 0;
+    }
+
+    img {
+        width: 280px;
+        height: 150px;
+        object-fit: scale-down;
+    }
+    
+    article {
+        display: block;
+    }
+
+    .proj_description {
+        font-weight: bold;
+    }
+
+    .proj_year {
+        font-style: italic;
+    }
+
+}
+
+&:has(path:hover) {
+    path:not(:hover) {
+      opacity: 0.5;
+    }
+}
+
+.selected {
+    --color: oklch(60% 45% 0) !important;
+
+    &:is(path) {
+        fill: var(--color);
+    }
+}
+
+path {
+    transition: 300ms;
+    cursor: pointer;
+}

@@ -76,23 +76,6 @@ label {
     grid-column: 1 / -1;
 }
 
-.projects {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(15em, 1fr));
-    gap: 1em;
-
-    h2 {
-        margin: 0;
-    }
-
-    img {
-        width: 280px;
-        height: 150px;
-        object-fit: scale-down;
-    }
-
-
-}
 
 article {
     display: grid;
@@ -128,3 +111,31 @@ h1 {
     }
 }
 
+.projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(15em, 1fr));
+    gap: 1em;
+
+    h2 {
+        margin: 0;
+    }
+
+    img {
+        width: 280px;
+        height: 150px;
+        object-fit: scale-down;
+    }
+    
+    article {
+        display: block;
+    }
+
+    .proj_description {
+        font-weight: bold;
+    }
+
+    .proj_year {
+        font-style: italic;
+    }
+
+}
