@@ -7,6 +7,7 @@ let pages = [
     { url: 'index.html', title: 'Home' },
     { url: 'projects/index.html', title: 'Projects' },
     { url: 'contact/index.html', title: 'Contact' },
+    { url: 'meta/index.html', title: 'Meta'},
     { url: 'contact/resume.html', title: "Resume"},
     { url: 'https://github.com/xiangyshi', title: "GitHub"},
 

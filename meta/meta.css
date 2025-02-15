@@ -1,0 +1,79 @@
+#stats {
+    border: 1px solid; /* Subtle border */
+    border-radius: 8px; /* Rounded corners */
+    padding: 20px; /* Spacing inside the container */
+    margin: 20px 0; /* Spacing above and below the container */
+}
+
+.stats {
+    display: grid; /* Use grid layout for better alignment */
+    grid-template-rows: auto auto; /* Two rows for terms and definitions */
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 10px; /* Space between grid items */
+}
+
+.stats dt {
+    font-weight: bold; /* Bold for terms */
+    grid-row: 1; /* Place all terms in the first row */
+}
+
+.stats dd {
+    margin: 0; /* Remove default margin */
+    grid-row: 2; /* Place all definitions in the second row */
+}
+
+.gridlines line {
+    stroke: lightgray; /* Color for gridlines */
+    stroke-opacity: 0.7; /* Slightly transparent */
+}
+
+dl.info {
+    display: grid; /* Use grid layout for better alignment */
+    grid-template-columns: auto 1fr; /* Two columns for labels and values */
+    margin: 0; /* Remove default margins */
+    background-color: rgba(255, 255, 255, 0.3); /* Semi-transparent background */
+    border-radius: 5px; /* Rounded corners */
+    padding: 10px; /* Padding for spacing */
+    transition-duration: 500ms; /* Smooth transition */
+    transition-property: opacity, visibility; /* Transition properties */
+}
+
+dl.info[hidden]:not(:hover, :focus-within) {
+    opacity: 0; /* Fade out */
+    visibility: hidden; /* Hide element */
+}
+
+.tooltip {
+    position: fixed; /* Fixed position for tooltip */
+    top: 1em; /* Position from top */
+    left: 1em; /* Position from left */
+}
+
+circle {
+    transition: 200ms; /* Smooth transition for scaling */
+    transform-origin: center; /* Scale from center */
+    transform-box: fill-box; /* Scale correctly */
+}
+
+circle:hover {
+    transform: scale(1.3); /* Scale up on hover */
+}
+
+circle.selected {
+    fill: #ff6b6b !important; /* Change color for selected dots */
+}
+
+@keyframes marching-ants {
+    to {
+      stroke-dashoffset: -8; /* 5 + 3 */
+    }
+}
+  
+.selection {
+    fill-opacity: 0.1;
+    stroke: black;
+    stroke-opacity: 0.7;
+    stroke-dasharray: 5 3;
+    animation: marching-ants 2s linear infinite;
+}
+
